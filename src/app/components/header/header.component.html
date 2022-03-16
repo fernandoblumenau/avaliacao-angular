@@ -1,0 +1,11 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink>Cadastro</a>
+      <ng-template ngbNavContent><app-conteudo></app-conteudo></ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Formulario</a>
+      <ng-template ngbNavContent><app-formulario></app-formulario></ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
